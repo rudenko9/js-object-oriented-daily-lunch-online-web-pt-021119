@@ -20,6 +20,6 @@ class Customer {
   constructor(name, neighborhood) {
     this.id = ++customerId
     this.name = name 
-    this.
+    this.neighborhoodId = neighborhoodId
   }
 }
