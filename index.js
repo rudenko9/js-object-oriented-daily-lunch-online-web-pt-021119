@@ -47,6 +47,7 @@ class Delivery {
     if(customer) {this.customerId = customer.id;}
     store.deliveries.push(this);
   }
+  
 }
 
 
