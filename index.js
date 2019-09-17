@@ -35,7 +35,7 @@ class Neighborhood {
 }
 
 class Customer {
-  constructor(name, neighborhood) {
+  constructor(name, neighborhoodId) {
     this.id = ++customerId
     this.name = name 
     if(neighborhood) {this.neighborhoodId = neighborhood.id}
