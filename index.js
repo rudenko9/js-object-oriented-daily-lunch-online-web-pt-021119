@@ -14,6 +14,25 @@ class Neighborhood {
     store.neighborhoods.push(this)
   }
   
+  deliveries() {
+    const deliveries = [];
+    this.neighborhoods().forEach(function(neighborhood) {
+      neighborhood.deliveries().forEach(function(delivery){
+        deliveries.push(delivery)
+      })
+    })
+    return deliveries;
+  }
+
+  meals() {
+    const meals = [];
+    this.deliveries().forEach(function(delivery) {
+      if (meals.includes(delivery.meal()) === false) {meals.push(delivery.meal())}
+    })
+    return meals;
+  }
+  
+  
 }
 
 
