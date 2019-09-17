@@ -25,6 +25,21 @@ class Customer {
     if(neighborhood) {this.neighborhoodId = neighborhood.id}
     store.customers.push(this);
   }
+  
+  deliveries() {
+    return store.deliveries.filter(function(delivery) {return delivery.customerId === this.id}.bind(this))
+  }
+
+  meals() {
+    return this.deliveries().map(function(delivery) {return delivery.meal()})
+  }
+
+  totalSpent() {
+    return this.meals().reduce(function(subtotal, meal) {
+      return subtotal + meal.price;
+    }, 0)
+  }
+  
 }
 
 
