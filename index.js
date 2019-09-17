@@ -10,5 +10,10 @@ class Neighborhood {
     store.neighborhoods.push(this)
   }
   
-  
+}
+
+class Customer {
+  constructor(name, neighborhood) {
+    
+  }
 }
