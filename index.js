@@ -32,11 +32,7 @@ class Neighborhood {
     })
     return meals;
   }
-  
-  
 }
-
-
 
 class Customer {
   constructor(name, neighborhood) {
