@@ -39,7 +39,9 @@ class Meal {
   }
 }
 
-class 
+class Delivery {
+  constructor()
+}
 
 
 
