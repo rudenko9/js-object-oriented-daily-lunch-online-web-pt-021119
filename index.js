@@ -41,6 +41,19 @@ class Meal {
     return store.deliveries.filter(delivery => delivery.meal().id === this.id)
   }
   
+  customers() {
+    return this.deliveries().map(function(delivery) {
+      return delivery.customer()})
+  }
+
+  static byPrice() {
+    let meals = store.meals.slice();
+    meals.sort(function(meal1, meal2) {
+      return meal2.price - meal1.price;
+    })
+    return meals;
+  }
+  
   
 }
 
