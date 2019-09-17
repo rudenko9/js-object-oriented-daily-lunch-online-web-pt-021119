@@ -88,7 +88,9 @@ class Meal {
 class Delivery {
   constructor(mealId, neighborhoodId,  customerId){
     this.id = deliveryId++;
-    
+    this.neighborhoodId = neighborhoodId;
+    this.customerId = customerId;
+    this.id = ++deliveryIdCount;
     store.deliveries.push(this);
   }
    meal() {
