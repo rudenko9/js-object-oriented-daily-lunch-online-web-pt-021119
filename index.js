@@ -14,9 +14,7 @@ class Neighborhood {
     store.neighborhoods.push(this)
   }
   customers() {
-    return this.deliveries()
-      .map(delivery => store.customers
-        .find(customer => customer.id === delivery.customerId))
+    return store.customers.filter(function(customer) {return customer.neighborhoodId === this.id}.bind(this))
 
   }
   
