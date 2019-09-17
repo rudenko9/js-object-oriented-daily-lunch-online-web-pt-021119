@@ -103,7 +103,7 @@ class Delivery {
   }
   
   customer() {
-    return store.customers.find(customer => customer.id === this.customerId)
+    return store.customers.find(function(customer){return customer.id === this.customerId}.bind(this))
   }
 }
 
