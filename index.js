@@ -58,7 +58,6 @@ class Customer {
   
 }
 
-
 class Meal {
   constructor(title, price) {
     this.id = ++mealId;
