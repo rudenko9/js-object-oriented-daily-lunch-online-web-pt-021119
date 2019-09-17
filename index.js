@@ -4,7 +4,7 @@ let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 let neighborhoodIdId = 1;
 let customerId = 1;
 let mealId = 1;
-let deliveryId = 1
+let deliveryId = 1;
 
 class Neighborhood {
   constructor(name) {
