@@ -17,7 +17,7 @@ class Neighborhood {
     return this.deliveries()
       .map(delivery => store.customers
         .find(customer => customer.id === delivery.customerId))
-      .filter(onlyUnique)
+
   }
   
   deliveries() {
