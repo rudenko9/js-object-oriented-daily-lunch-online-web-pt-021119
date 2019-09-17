@@ -40,7 +40,9 @@ class Meal {
 }
 
 class Delivery {
-  constructor(meal, customer, neighborhood)
+  constructor(meal, neighborhood,  customer){
+    
+  }
 }
 
 
