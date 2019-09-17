@@ -1,7 +1,7 @@
 // global datastore
 let store = { neighborhoods: [], meals: [], customers: [], deliveries: [] };
 
-let neighborhoodIdId = 1;
+let neighborhoodId = 1;
 let customerId = 1;
 let mealId = 1;
 let deliveryId = 1;
