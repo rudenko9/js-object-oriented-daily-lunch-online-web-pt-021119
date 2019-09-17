@@ -47,6 +47,9 @@ class Delivery {
     if(customer) {this.customerId = customer.id;}
     store.deliveries.push(this);
   }
+   meal() {
+    return store.meals.find(meal => this.mealId === meal.id)
+  }
   
 }
 
