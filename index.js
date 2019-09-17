@@ -15,13 +15,8 @@ class Neighborhood {
   }
   
   deliveries() {
-    const deliveries = [];
-    this.neighborhoods().forEach(function(neighborhood) {
-      neighborhood.deliveries().forEach(function(delivery){
-        deliveries.push(delivery)
-      })
-    })
-    return deliveries;
+    return store.deliveries
+    .filter(delivery => delivery.neighborhoodId === this.id);
   }
 
   meals() {
