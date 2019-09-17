@@ -54,7 +54,6 @@ class Meal {
     return meals;
   }
   
-  
 }
 
 class Delivery {
